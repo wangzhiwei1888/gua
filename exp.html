@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<style type="text/css">
+	#con{
+		width: 400px;
+		height: 400px;
+		margin:100px auto;
+	}
+	</style>
+</head>
+<body>
+
+<div id="con"></div>
+<span></span>
+<script type="text/javascript" src="gua.js"></script>
+<script type="text/javascript">
+	 var oDiv = document.querySelector('#con');
+	// console.log(gua);
+	gua.init(oDiv,{
+		bg : '1.jpg',
+		fg : '2.jpg',
+		p : 40,
+		clear : function(){
+			alert('只要设定属性p，clear就会自动生效,40%以到，自动清除');
+		},
+		size : 15
+	});
+</script>
+</body>
+</html>
